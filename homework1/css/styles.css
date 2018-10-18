@@ -3,19 +3,20 @@
   box-sizing: border-box;
 }
 html {
-  background-color: #343434;
-  color: #16b15b;
-  font-family: 'Raleway', sans-serif;
+  background-color: hotpink;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 24px;
   scroll-behavior: smooth;
 }
 header {
   padding: 40px;
+  background-color: yellowgreen;
 }
-
 h1 {
   line-height: .8;
+  font-family: 'Prata', serif;
 }
 p {
   margin: 1em 0;
@@ -31,10 +32,10 @@ a {
   padding: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 #work {
-  background-color: #16b1b5;
+  background-color: turquoise;
   padding: 40px;
   color: white;
   column-count: 2;
@@ -45,7 +46,7 @@ a {
 #gallery {
   column-count: 3;
   column-gap: 0;
-  background-color: #16b1b5;
+  background-color: black;
 }
 div{
   break-inside: avoid;
