@@ -1,0 +1,144 @@
+* {
+  box-sizing:border-box;
+margin: 0;
+}
+html {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+h3 {
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 1em;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#makeover {
+  background: white;
+  background-image: url("../images/titlebackground-01.svg");
+  background-clip: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#makeover img {
+  position: middle;
+}
+
+}
+.section-top {
+  display: block;
+  background-color: #E9DD79;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+
+.heading {
+  background: #E9DD79;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.illustration {
+  background: #E9DD79;
+  height: 60vh;
+}
+
+.lowercase {
+  width: 75vw;
+  padding-bottom: 1em;
+  background: white;
+  position: static;
+}
+
+h2 {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 3em;
+}
+
+p {
+  padding: 0 3em;
+}
+
+#pantry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3em;
+}
+
+#pantry strong {
+  padding-left: 3em;
+}
+
+#pantry img {
+  padding: 0;
+  width: 40vw;
+}
+
+#fridge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3em;
+}
+
+#fridge strong {
+  padding-left: 3em;
+}
+
+#tools strong {
+  padding-left: 3em;
+}
+
+#fridge img {
+  padding: 0;
+  width: 50vw;
+}
+
+
+footer {
+  background: black;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 3em;
+
+}
+
+footer nav {
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: lighter;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  text-align: center;
+
+}
+
+footer div {
+  display: none;
+
+}

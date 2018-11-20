@@ -1,0 +1,111 @@
+* {
+  box-sizing:border-box;
+margin: 0;
+}
+html {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+#makeover {
+  background: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#makeover img {
+  position: middle;
+}
+
+.section-top {
+  padding: 3em 0;
+}
+
+.lowercase {
+  width: 75vw;
+  padding-bottom: 1em;
+}
+
+h3 {
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 1em;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+h2 {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 3em;
+}
+
+p {
+  padding: 0 3em;
+}
+
+#pantry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3em;
+}
+
+#pantry strong {
+  padding-left: 3em;
+}
+
+#pantry img {
+  padding: 0;
+  width: 40vw;
+}
+
+#fridge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3em;
+}
+
+#fridge strong {
+  padding-left: 3em;
+}
+
+#fridge img {
+  padding: 0;
+  width: 50vw;
+}
+
+
+footer {
+  background: yellow;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  background-color: yellow;
+  display: flex;
+
+}
