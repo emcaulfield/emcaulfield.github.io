@@ -13,6 +13,8 @@ h3 {
   color: white;
   background: black;
   text-align: center;
+  font-size: 1em;
+  font-weight: 300;
   padding: 1em;
   text-transform: uppercase;
   position: fixed;
@@ -20,22 +22,30 @@ h3 {
   right: 0;
   left: 0;
 }
-
+/*
 #makeover {
   background: white;
-  background-image: url("../images/titlebackground-01.svg");
   background-clip: border-box;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1em 0;
 }
+*/
 
 #makeover img {
   position: middle;
 }
 
+.topper {
+  display: block;
+  padding-top: 3em;
+  padding-right: 0;
+  vertical-align: middle;
+  background-size: 100% 100%;
 }
+
 .section-top {
   display: block;
   background-color: #E9DD79;
@@ -43,24 +53,9 @@ h3 {
   vertical-align: middle;
 }
 
-.heading {
-  background: #E9DD79;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.illustration {
-  background: #E9DD79;
-  height: 60vh;
-}
-
 .lowercase {
-  width: 75vw;
-  padding-bottom: 1em;
+  display: none;
+  width: 50vw;
   background: white;
   position: static;
 }
@@ -72,46 +67,46 @@ h2 {
 ul {
   list-style-type: none;
   padding-left: 3em;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 p {
-  padding: 0 3em;
+  padding: 2em 3em;
+  font-size: 15px;
+  font-weight: 400;
 }
+
 
 #pantry {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 3em;
-}
-
-#pantry strong {
-  padding-left: 3em;
-}
-
-#pantry img {
-  padding: 0;
-  width: 40vw;
 }
 
 #fridge {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 3em;
 }
 
-#fridge strong {
-  padding-left: 3em;
+.essentialsheaders {
+  width: 50vw;
+  padding-top: 2em;
+  padding-left: 1em;
 }
 
-#tools strong {
-  padding-left: 3em;
-}
-
-#fridge img {
+.essentialsillos {
   padding: 0;
   width: 50vw;
+}
+
+
+#tools,
+#bread {
+  padding-bottom: 4em;
 }
 
 
@@ -122,20 +117,22 @@ footer {
   left: 0px;
   right: 0px;
   height: 3em;
-
 }
 
 footer nav {
-  text-decoration: none;
-  font-size: 80%;
-  font-weight: lighter;
-  color: white;
-  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
-  padding: 1em;
   text-align: center;
+}
 
+footer a {
+  text-decoration: none;
+  font-size: 70%;
+  font-weight: 400;
+  color: white;
+  padding: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 footer div {
