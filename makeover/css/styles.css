@@ -22,7 +22,7 @@ h3 {
   right: 0;
   left: 0;
 }
-/*
+
 #makeover {
   background: white;
   background-clip: border-box;
@@ -32,7 +32,7 @@ h3 {
   justify-content: center;
   padding: 1em 0;
 }
-*/
+
 
 #makeover img {
   position: middle;
@@ -48,7 +48,6 @@ h3 {
 
 .section-top {
   display: block;
-  background-color: #E9DD79;
   background-size: 100% 100%;
   vertical-align: middle;
 }
@@ -137,5 +136,29 @@ footer a {
 
 footer div {
   display: none;
+
+}
+
+@media (min-width: 800px) {
+
+.section-top {
+  display: block;
+  width: 50vw;
+  float: left;
+}
+
+p,
+ul,
+ol {
+  display: block;
+}
+
+.right {
+  display: block;
+  float: right;
+  width: 50vw;
+  clear: both;
+
+}
 
 }
