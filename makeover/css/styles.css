@@ -9,6 +9,7 @@ html {
   background-color: white;
 }
 
+
 h3 {
   color: white;
   background: black;
@@ -139,26 +140,92 @@ footer div {
 
 }
 
+#intro
+.section-top {
+  background-color: #E9DD79;
+}
+
+#safetyfirst
+.section-top {
+  background-color: #A97EB7;
+}
+
+#preservation
+.section-top {
+  background-color: #C56661;
+}
+
+#essentials
+.section-top {
+  background-color: #A3B7D6;
+}
+
+#veggies
+.section-top {
+  background-color: #D65663;
+}
+
+#bread
+.section-top {
+  background-color: #F6921E;
+}
+
+#rice
+.section-top {
+  background-color: #8BC53F;
+}
+
+#valentines
+.section-top {
+  background-color: #A3B7D6;
+}
+
+
+#pizza
+.section-top {
+  background-color: #A97EB7;
+}
+
+#cookout
+.section-top {
+  background-color: #D6DE23;
+}
+
+#wedding
+.section-top {
+  background-color: #FFE78F;
+}
+
+#fruitpicking
+.section-top {
+  background-color: #EE6E66;
+}
+
 @media (min-width: 800px) {
 
-.section-top {
-  display: block;
-  width: 50vw;
-  float: left;
-}
+  .section-top {
+    height: 100vh;
+    padding: 3rem 0;
+    float: left;
+    width: 50%;
+  }
 
-p,
-ul,
-ol {
-  display: block;
-}
+  .section-top > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 
-.right {
-  display: block;
-  float: right;
-  width: 50vw;
-  clear: both;
+  }
 
-}
+  .right {
+    float: right;
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  section {
+    clear: both;
+  }
 
 }
