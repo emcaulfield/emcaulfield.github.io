@@ -39,29 +39,31 @@ h3 {
   position: middle;
 }
 
-.topper {
+
+.section-top > img {
   display: block;
-  padding-top: 3em;
-  padding-right: 0;
-  vertical-align: middle;
   background-size: 100% 100%;
+  vertical-align: middle;
+  object-fit: contain;
+  object-position: center;
+  padding: 3rem 0;
 }
 
 .section-top {
-  display: block;
-  background-size: 100% 100%;
-  vertical-align: middle;
+  height: 90vh;
+  width: 100%;
+  align-content: middle;
 }
 
 .lowercase {
-  display: none;
-  width: 50vw;
+  display: block;
+  width: 70vw;
   background: white;
-  position: static;
 }
 
 h2 {
   display: none;
+  text-align: center;
 }
 
 ul {
@@ -80,33 +82,24 @@ p {
 }
 
 
-#pantry {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#pantry > img {
+  display: block;
+  float: right;
 }
 
 #fridge {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
 }
 
 .essentialsheaders {
   width: 50vw;
-  padding-top: 2em;
+  padding-top: 5rem;
   padding-left: 1em;
 }
 
 .essentialsillos {
   padding: 0;
   width: 50vw;
-}
-
-
-#tools,
-#bread {
-  padding-bottom: 4em;
 }
 
 
@@ -135,9 +128,30 @@ footer a {
   text-align: center;
 }
 
-footer div {
-  display: none;
+#overlay-menu a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 
+#overlay-menu > .about.nav {
+padding: 40px 0;
+height: 100vh;
+background: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 20rem;
+  left: 0;
+  right: 0;
+}
+
+.essentials.nav,
+.recipes.nav {
+  display: none;
 }
 
 #intro
@@ -208,6 +222,7 @@ footer div {
     padding: 3rem 0;
     float: left;
     width: 50%;
+    /* position: fixed; */
   }
 
   .section-top > img {
@@ -215,13 +230,38 @@ footer div {
     width: 100%;
     object-fit: contain;
     object-position: center;
-
   }
+
+  /*h2 {
+    display: block;
+    text-align: center;
+    font-size: 1em;;
+  }*/
 
   .right {
     float: right;
     width: 50%;
     min-height: 100vh;
+  }
+
+  .right-first{
+    float: right;
+    width: 50%;
+    min-height: 100vh;
+    padding: 10rem 0;
+  }
+
+  #bread,
+  #tools,
+  #fruitpicking  {
+  padding-bottom: 90em;
+  }
+
+
+  .essentialsheaders {
+    width: 30vw;
+    padding-top: 5rem;
+    padding-left: 1em;
   }
 
   section {
