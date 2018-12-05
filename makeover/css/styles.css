@@ -44,16 +44,19 @@ h3 {
   display: block;
   background-size: 100% 100%;
   vertical-align: middle;
+  /* vertical-align: middle; */
   object-fit: contain;
   object-position: center;
-  padding: 3rem 0;
+  padding: 7rem 0;
 }
 
 .section-top {
   height: 90vh;
   width: 100%;
-  align-content: middle;
+  align-content:
+  padding: 3rem 0;
 }
+
 
 .lowercase {
   display: block;
@@ -109,13 +112,15 @@ footer {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 3em;
+  height: 10vh;
 }
 
 footer nav {
   display: flex;
   justify-content: space-around;
+  vertical-align: middle;
   text-align: center;
+  padding: 1.5em 0;
 }
 
 footer a {
@@ -123,18 +128,36 @@ footer a {
   font-size: 70%;
   font-weight: 400;
   color: white;
-  padding: 1.5em;
+  /* padding: 1.5em 0; */
   text-transform: uppercase;
   text-align: center;
 }
 
-#overlay-menu a {
+.overlay-menu a {
   display: block;
   text-align: center;
   text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
-#overlay-menu > .about.nav {
+.overlay-menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-content: space-between;
+  justify-content: center;
+  height: 93vh;
+  background: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:3rem;
+}
+
+
+/* #overlay-menu > .about.nav {
 padding: 40px 0;
 height: 100vh;
 background: lightblue;
@@ -147,7 +170,7 @@ background: lightblue;
   bottom: 20rem;
   left: 0;
   right: 0;
-}
+} */
 
 .essentials.nav,
 .recipes.nav {
@@ -249,6 +272,10 @@ background: lightblue;
     width: 50%;
     min-height: 100vh;
     padding: 10rem 0;
+  }
+
+  .lowercase {
+    width: 60px;
   }
 
   #bread,
