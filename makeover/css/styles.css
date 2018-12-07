@@ -29,34 +29,28 @@ h3 {
   background-clip: border-box;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1em 0;
 }
 
-
-#makeover img {
-  position: middle;
-}
-
-
+#makeover img,
 .section-top > img {
-  display: block;
-  background-size: 100% 100%;
-  vertical-align: middle;
-  /* vertical-align: middle; */
-  object-fit: contain;
-  object-position: center;
-  padding: 7rem 0;
+  width: 100%;
+
 }
 
 .section-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
-  width: 100%;
-  align-content:
   padding: 3rem 0;
 }
 
+.right {
+  padding: 3rem 0;
+}
 
 .lowercase {
   display: block;
@@ -96,7 +90,6 @@ p {
 
 .essentialsheaders {
   width: 50vw;
-  padding-top: 5rem;
   padding-left: 1em;
 }
 
@@ -112,7 +105,7 @@ footer {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 10vh;
+  height: 7vh;
 }
 
 footer nav {
@@ -120,14 +113,16 @@ footer nav {
   justify-content: space-around;
   vertical-align: middle;
   text-align: center;
-  padding: 1.5em 0;
+  /* padding: 1.5em 0; */
 }
 
 footer a {
+  display: block;
   text-decoration: none;
   font-size: 70%;
   font-weight: 400;
   color: white;
+  vertical-align: middle;
   /* padding: 1.5em 0; */
   text-transform: uppercase;
   text-align: center;
@@ -154,6 +149,7 @@ footer a {
   left: 0;
   right: 0;
   bottom:3rem;
+  display: none;
 }
 
 
@@ -245,7 +241,7 @@ background: lightblue;
     padding: 3rem 0;
     float: left;
     width: 50%;
-    /* position: fixed; */
+    position: fixed;
   }
 
   .section-top > img {
@@ -253,6 +249,8 @@ background: lightblue;
     width: 100%;
     object-fit: contain;
     object-position: center;
+    position: sticky;
+    top: -1px;
   }
 
   /*h2 {
