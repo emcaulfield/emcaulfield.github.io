@@ -5,9 +5,9 @@
 
 html {
   font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   scroll-behavior: smooth;
-  --yellow: #e9dd79;
+  --yellow: #e9bd33;
   --purple: #a97eb7;
   --red: #c56661;
   --blue: #a3b7d6;
@@ -22,8 +22,8 @@ h1 {
   background: black;
   text-align: center;
   font-size: 1em;
-  font-weight: 300;
-  padding: 1em;
+  font-weight: 400;
+  padding: 1.5em;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -37,10 +37,28 @@ h3,
 p,
 ul {
   margin-bottom: 1rem;
+  display: block;
 }
 
+
+.hand-script {
+  display: block;
+  height: 12vh;
+  max-width: 70vw;
+}
 h2 {
-  display: none;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid;
+    padding-top: 1rem;
+
 }
 
 ul {
@@ -68,17 +86,12 @@ header img,
 }
 
 .text-container {
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
 }
 
-.essentialsheaders {
-  margin: auto;
-}
-
-.essentialsheaders,
 .essentialsillos {
   display: block;
-  max-width: 25rem;
+  width: 40vw;
 }
 
 footer {
@@ -123,14 +136,51 @@ footer a {
   background: blue; */
 }
 
-.about-nav,
+.overlay-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem;
+  z-index: 750;
+}
+
+.overlay-nav a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+#about-nav {
+  background-color: var(--yellow);
+}
+
+#essentials-nav {
+  background-color: var(--blue);
+}
+
+#regulars-nav {
+  background-color: var(--red);
+}
+
+
+
+/* .about-nav,
 .essentials-nav,
 .recipes-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: gold;
   position: fixed;
   top: 0;
   left: 0;
@@ -138,6 +188,7 @@ footer a {
   bottom: 0;
   z-index: 750;
 }
+
 
 .about-nav a,
 .essentials-nav a,
@@ -149,6 +200,23 @@ footer a {
   padding: 1.5rem 0;
   text-decoration: none;
   border-bottom: 1px white solid;
+} */
+
+a:hover,
+.close:hover {
+  color: lightgray;
+}
+
+.nav-secondlevel a {
+  font-weight: 200;
+  font-size: 60%;
+}
+
+.close {
+  width: 2rem;
+  position: fixed;
+  top: 5vh;
+  right: 5vh;
 }
 
 
