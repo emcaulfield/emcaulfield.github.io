@@ -32,8 +32,8 @@
   </section>
   <section id="pantry">
     <div class="text-container">
-      <img src="images/pantry.svg" style="float: right;"class="hand-script" alt="pantry">
-        <img src="images/lemon.svg" class="essentialsillos img-right" alt="a lemon">
+      <img src="images/pantry.svg" class="hand-script" class="essentialillo" alt="pantry">
+        <!-- <img src="images/lemon.svg" class="essentialsillo" alt="a lemon"> -->
       <!-- <h3>Pantry</h3> -->
       <ul>
         <li class="list-header">The Basics</li>
@@ -74,8 +74,8 @@
   </section>
   <section id="fridge">
     <div class="text-container">
-      <img src="images/fridge.svg" class="hand-script" alt="fridge">
-      <img src="images/butter-01.svg" class="essentialsillos img-left" alt="butter" style="width: 40vw;">
+      <img src="images/fridge.svg" class="hand-script" class="essentialillo" alt="fridge">
+      <!-- <img src="images/butter-01.svg" class="essentialsillo" alt="butter"> -->
       <!-- <h2>Fridge</h2> -->
       <ul>
         <li class="list-header">Condiments</li>
@@ -168,48 +168,66 @@
       </ul>
     </div>
   </section>
+
+
   <footer>
     <nav>
       <!-- <button href="#about" id="about" name="About"> About</button> -->
-      <a href="#about" id="about">About</a>
-      <a href="#recipes" id="recipes">Recipes</a>
-      <a href="#essentials" id="essentials">TEssentials</a>
+      <a href="#index.html" id="about-link">About</a>
+      <a href="#beforeandafter.html" id="recipes-link">Recipes</a>
+      <a href="#essentials.html" id="essentials-link">Essentials</a>
     </nav>
   </footer>
-
-  <nav class="about-nav" style="display: none; background-color: var(--yellow);">
+  <div id="overlay-all">
+  <nav id="about-nav" class="overlay-nav" style="display:none; background-color: var(--yellow);" >
     <img src="images/close.svg" class="close" alt="close menu">
-    <a href="#intro">Introduction</a>
-    <a href="#safetyfirst">Safety First</a>
-    <a href="#preservation">Preservation Methods</a>
+    <div class="overlayheading"><p>About</p>
+    </div>
+    <a href="index.html#intro" class="nav-toplevel">Introduction</a>
+    <a href="index.html#safetyfirst" class="nav-toplevel">Safety First</a>
+    <a href="index.html#preservation" class="nav-toplevel">Preservation</a>
   </nav>
 
-  <nav class="essentials-nav" style="display: none; background-color: var(--blue);">
-    <a href="#pantry">Pantry</a>
-    <a href="#fridge">Fridge</a>
-    <a href="#tools">Tools</a>
+
+  <nav id="essentials-nav" class="overlay-nav" style="display:none; background-color: var(--blue);">
+    <img src="images/close.svg" class="close" alt="close menu">
+    <div class="overlayheading"><p>Essentials</p>
+    </div>
+    <a href="essentials.html#pantry" class="nav-toplevel">Pantry</a>
+    <a href="essentials.html#fridge" class="nav-toplevel">Fridge</a>
+    <a href="essentials.html#tools" class="nav-toplevel">Tools</a>
   </nav>
 
-  <nav class="recipes-nav" style="display: none; background-color: var(--red);">
-    <a href="#regulars" class="nav-toplevel">The Regulars</a>
-        <a href="#rice">Rice</a>
-             <a href="#arancini" style="color:black" class="nav-thirdlevel">arancini</a>
+  <nav id="recipes-nav" class="overlay-nav" style="display:none; background-color: var(--red);">
+  <img src="images/close.svg" class="close" alt="close menu">
+  <div class="overlayheading"><p>Recipes</p>
+  </div>
+  <div>
+    <a href="regulars.html" id="regulars-nav" class="nav-toplevel">The Regulars</a>
+    <div>
+        <a href="regulars.html#rice" class="nav-secondlevel">Rice</a>
+             <a href="#arancini" class="nav-thirdlevel">arancini</a>
             <a href="#veggieburgers" class="nav-thirdlevel">veggie Burgers</a>
             <a href="#ricepudding" class="nav-thirdlevel">rice Pudding</a>
-        <a href="#veggies" class="nav-thirdlevel">Veggies</a>
+        <a href="regulars.html#veggies" class="nav-secondlevel">Veggies</a>
             <a href="#frittata" class="nav-thirdlevel">frittata</a>
             <a href="#stirfry" class="nav-thirdlevel">stir fry</a>
             <a href="#vegetablebroth" class="nav-thirdlevel">vegetable broth</a>
-        <a href="#bread">Bread</a>
+        <a href="regulars.html#bread" class="nav-secondlevel">Bread</a>
             <a href="#frenchtoast" class="nav-thirdlevel">raspberry lemon french toast</a>
             <a href="#croutons" class="nav-thirdlevel">Garlic parmesan croutons</a>
-    <a href="#beforeandafter" class="nav-toplevel">Before and After</a>
+    </div>
+    </div>
+    <nav>
+    <div>
+    <a href="beforeandafter.html" id="beforeafter-nav" class="nav-toplevel">Before and After</a>
+    <div class="two-cols">
         <a href="#newyears" class="nav-secondlevel">New Years</a>
-            <a href="#heartysoup">hearty soup</a>
+            <a href="#heartysoup" class="nav-thirdlevel">hearty soup</a>
         <a href="#valentines" class="nav-secondlevel">Valentine's Day</a>
             <a href="#nobakecookies" class="nav-thirdlevel">no-bake chocolate cookies</a>
-        <a href="#stpatrics" class="nav-secondlevel">St. Patrick's Day</a>
-            <a href="#vegetablebroth">Vegetable broth</a>
+        <a href="#stpatricks" class="nav-secondlevel">St. Patrick's Day</a>
+            <a href="#vegetablebroth" class="nav-thirdlevel">Vegetable broth</a>
         <a href="#pizza" class="nav-secondlevel">Pizza Night</a>
         <a href="#cookout" class="nav-secondlevel">Cookout</a>
         <a href="#wedding" class="nav-secondlevel">Wedding Reception</a>
@@ -217,6 +235,11 @@
         <a href="#thanksgiving" class="nav-secondlevel">Thanksgiving</a>
         <a href="#christmas" class="nav-secondlevel">Christmas</a>
   </nav>
+  </div>
+  </div>
+</div>
+</nav>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha384-hKAOvu4SRkR5UhOl+rvozhqPNh0VgjTz0sydNTzye3vkV6VzpbLACSgthC2bhXeV" crossorigin="anonymous"></script>

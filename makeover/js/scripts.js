@@ -1,29 +1,59 @@
-$(document).ready(function(){
+
+$(document).ready(function ($) {
+
 
   $('#about-link').click(function(e){
     e.preventDefault();
-    $('.overlay-nav').fadeOut();
     $('#about-nav').fadeToggle();
+    $('#essentials-nav').fadeOut();
+    $('#recipes-nav').fadeOut();
   });
 
   $('#essentials-link').click(function(e){
     e.preventDefault();
-    $('.overlay-nav').fadeOut();
+    $('#about-nav').fadeOut();
     $('#essentials-nav').fadeToggle();
+    $('#recipes-nav').fadeOut();
   });
 
   $('#recipes-link').click(function(e){
     e.preventDefault();
-    $('.overlay-nav').fadeOut();
+    $('#about-nav').fadeOut();
+    $('#essentials-nav').fadeOut();
     $('#recipes-nav').fadeToggle();
   });
 
-  $('.overlay-nav').click(function(){
-    $(this).fadeToggle();
+  $('.nav-toplevel').click(function(){
+    $('.overlay-nav').fadeOut("slow");
+
+    });
+
+    $('.nav-secondlevel').click(function(){
+      $('.overlay-nav').fadeOut("slow");
+  });
+
+  $('.nav-thirdlevel').click(function(){
+    $('.overlay-nav').fadeOut("slow");
+
+  // (function($) {
+  //     var $window = $(window);
+  //
+  //     $window.resize(function resize(){
+  //         if ($window.width() < 800) {
+  //             return $('.overlay-nav').fadeOut();
+  //         }
+  //
+  //     }).trigger('resize');
+  // })(jQuery);
+
+  // $('.overlay-nav').click(function(){
+  //   $(this).fadeToggle();
+  // });
+
   });
 
   $('.close').click(function(){
-    $('.overlay-nav').fadeOut();
+    $('.overlay-nav').fadeOut("slow");
   });
 
   let $section = $('section');
