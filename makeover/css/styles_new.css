@@ -25,6 +25,12 @@ html {
   z-index: 1000000;
 } */
 
+.menubutton {
+  display:none;
+}
+
+
+
 body {
   padding-bottom: 5rem;
 }
@@ -64,15 +70,16 @@ h4 {
 }
 
 #makeover {
-  background: url('../images/titlebackground-01.svg') center;
+  background: url('../images/titlebackground_small-01.svg') center;
   object-fit: cover;
 }
 
 
 .hand-script {
   display: block;
-  max-width: 50vw;
-  max-height: 25vh;
+  max-width: 40vw;
+  max-height: 250vh;
+  padding-left: 0;
 }
 
 /* .essentialillo {
@@ -382,6 +389,32 @@ a:hover {
 
 @media (min-width: 800px) {
 
+  .menubutton {
+    display: block;
+    position:fixed;
+    width: 2.5rem;
+    top: 1em;
+    right: 3em;
+    z-index: 100000;
+  }
+
+  .menutoggle:hover {
+    opacity: 0;
+  }
+
+  .hoverimg {
+    position:fixed;
+    width: 2.5rem;
+    top: 1em;
+    right: 3em;
+    z-index: 100000;
+    opacity: 0;
+  }
+
+  .hoverimg:hover {
+    opacity: 1;
+  }
+
   .text-container {
     width: 50vw;
     margin-left: auto;
@@ -403,8 +436,12 @@ a:hover {
     opacity:1;
   }
 
+  .hand-script {
+    max-width: 35vh;
+  }
 
-  /* footer {
+
+  footer {
     display: none;
   }
 
@@ -445,7 +482,6 @@ a:hover {
   .nav-thirdlevel:nth-child(odd) {
     color: var(--yellow);
 }
-  }
 
   #about-nav,
   #essentials-nav {
@@ -486,6 +522,6 @@ height: 50vh;
  }
 
 .close {
-  display: none; */ */
+  display: none; */
 }
 }

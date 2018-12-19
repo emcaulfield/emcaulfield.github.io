@@ -34,37 +34,42 @@ $(document).ready(function ($) {
 
   $('.nav-thirdlevel').click(function(){
     $('.overlay-nav').fadeOut("slow");
+    });
 
-  // (function($) {
-  //     var $window = $(window);
-  //
-  //     $window.resize(function resize(){
-  //         if ($window.width() < 800) {
-  //             return $('.overlay-nav').fadeOut();
-  //         }
-  //
-  //     }).trigger('resize');
-  // })(jQuery);
+    $('.overlay-nav').click(function(){
+      $(this).fadeToggle();
+    });
 
-  // $('.overlay-nav').click(function(){
-  //   $(this).fadeToggle();
-  // });
+    $('.close').click(function(){
+      $('.overlay-nav').fadeOut("slow");
 
-  });
+    });
 
-  $('.close').click(function(){
-    $('.overlay-nav').fadeOut("slow");
-  });
+    let $section = $('section');
+    let waypoints = $section.waypoint({
+      handler: function(direction) {
+        if(direction === 'down') {
+          $(this.element).addClass('active');
+        } else {
+          $(this.element).removeClass('active');
+        }
+      },
+      offset: 250
+    });
 
-  let $section = $('section');
-  let waypoints = $section.waypoint({
-    handler: function(direction) {
-      if(direction === 'down') {
-        $(this.element).addClass('active');
-      } else {
-        $(this.element).removeClass('active');
-      }
-    },
-    offset: 250
-  });
+    $('.menubutton').click(function(){
+      $('.overlay-nav').fadeToggle("fast");
+
+      });
+
+  (function($) {
+      var $window = $(window);
+
+      $window.resize(function resize(){
+          if ($window.width() < 800) {
+              return $('.overlay-nav').fadeOut();
+          }
+
+      }).trigger('resize');
+  })(jQuery);
 });
