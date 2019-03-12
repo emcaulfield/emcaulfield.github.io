@@ -24,7 +24,7 @@ $(document).ready(function ($) {
   });
 
   $('.nav-toplevel').click(function(){
-    $('.overlay-nav').fadeOut("slow");
+    $('.overlay-nav').fadeOut();
 
     });
 
@@ -36,9 +36,9 @@ $(document).ready(function ($) {
     $('.overlay-nav').fadeOut("slow");
     });
 
-    $('.overlay-nav').click(function(){
-      $(this).fadeToggle();
-    });
+    // $('.overlay-nav').click(function(){
+    //   $(this).fadeToggle();
+    // });
 
     $('.close').click(function(){
       $('.overlay-nav').fadeOut("slow");
