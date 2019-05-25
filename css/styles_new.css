@@ -90,19 +90,20 @@ h2 {
   padding-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 h2:after {
     content: "";
     display: block;
-    border-bottom: 2px solid;
-    padding-top: 1rem;
+    /* border-bottom: 1px solid; */
+    /* padding-top: 1rem; */
 
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
   padding-left: 0;
 }
 
@@ -127,6 +128,12 @@ header img,
 
 .text-container {
   padding: 4rem 3rem;
+  min-height: 100vh;
+}
+
+.text-container-top {
+  background: var(--blue);
+  height: 100vh;
 }
 
 footer {
